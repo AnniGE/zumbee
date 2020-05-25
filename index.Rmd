@@ -10,6 +10,8 @@ output:
       smooth_scroll: true
 ---
 
+
+
 #**Introducción **
 
 La apicultura es sin lugar a dudas uno de los sectores primarios más importantes ya que se encarga de la producción de miel, y también la producción de abejas.Aunque no se hable mucho de ello, México es un gran productor de miel, a lo largo de los años se ha hecho notar en contraste con otros países.
@@ -24,7 +26,7 @@ A pesar del gran potencial que tiene esta área, no se le ha tomado la atención
 Los apiarios es el grupo de colmenas dispuestos en determinado terreno para un apicultor. Para poder poner uno, hay que tomar en cuenta la ubicación en donde se desea instalar, así como las condiciones que tendrán las abejas para poder desarrollarse (entre más cantidad de vegetación se encuentre, mejor es la producción).
 La razón por la que es importante tomar en cuenta la ubicación es debido a que, actualmente en Latinoamérica ya se encuentran las abejas africanizadas, llegando a hacer ataques y provocando la muerte de animales e inclusive de personas. 
 
-####**principales a considerar para colocar los apiarios **
+####**principales puntos a considerar para colocar los apiarios **
 
 -	Ubicarlo cerca de un lugar donde existe abundancia de flores
 -	La orientación de la colmena será de manera que el sol dé en la piquera (es la apertura donde entran y salen las abejas) cuanto antes, haciendo que empiecen a trabajar lo más temprano posible.
