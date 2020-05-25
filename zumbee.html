@@ -11,7 +11,7 @@
 
 
 
-<title>My Website</title>
+<title>ZumBee</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,7 +19,11 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
@@ -245,7 +249,73 @@ $(document).ready(function () {
 </style>
 
 <!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
 
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
 
 
 
@@ -255,6 +325,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -302,17 +382,47 @@ $(document).ready(function () {
 
 <div class="fluid-row" id="header">
 
-
-
-<h1 class="title toc-ignore">My Website</h1>
-
+<div class="btn-group pull-right">
+<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
 </div>
 
 
 
+<h1 class="title toc-ignore">ZumBee</h1>
+
+</div>
+
+
+<div id="por-qué-es-tan-importante-el-tema-de-la-apicultura" class="section level1">
+<h1>**¿Por qué es tan importante el tema de la Apicultura?</h1>
+<p>Como bien es sabido, las abejas juegan un papel muy importante en la tierra, ya que gracias a ellas y su polinización, ayudan a las plantas a poder desarrollarse correctamente para que puedan brindarnos el oxígeno que tanto necesitamos. La producción de las abejas depende mucho de la ubicación en la que se encuentren, porque dependiendo de las condiciones de dónde estén éstas tendrán mayor o menor producción de miel.</p>
+<div id="es-solo-cuestión-económica" class="section level3">
+<h3>**¿Es solo cuestión económica?</h3>
+<p>La respuesta es no, si bien la apicultura podría generar un impacto positivo e importante en la economía del país, también se trata de nuestra vida diaria y el mundo como lo conocemos. Como hemos visto antes, las abejas tienen un trabajo fundamental para nuestro planeta; y es nuestro trabajo darles al menos un ambiente en el que puedan adaptarse correctamente.</p>
+</div>
+</div>
+<div id="zumbee" class="section level1">
+<h1><strong>ZumBee</strong></h1>
+<p>ZumBee es la mejor opción que existe para encontrar un lugar con las mejores condiciones para colocar un apiario y tener una buena producción, a la vez que ayudan a las plantas a tener desarrollo. Gracias a los estudios de distintos apiarios existentes, Zumbee puede triangular lugares que cumplan con las condiciones climáticas y geográficas que los apiarios necesitan para tener una producción alta.</p>
+<p>¿Por qué conformarnos con un apiario de producción media, si podemos escuchar lo que las abejas necesitan?</p>
+</div>
+<div id="qué-se-espera-de-zumbee" class="section level1">
+<h1><strong>¿Qué se espera de ZumBee?</strong></h1>
+<p>ZumBee es un proyecto en marcha, con el objetivo de ayudar al sector apícola. Como se pueden dar cuenta, la información sobre esta área es poca o nula. Con tu ayuda podemos hacer que nuestro sitio tenga más información, una Beepedia, ¿no sería eso grandioso?</p>
+<p>¡Te invitamos a colaborar con nosotros! Si tienes información que consideres que puede contribuir a la causa, puedes enviarla a nuestro correo: <a href="mailto:ZumBee@gmail.com">ZumBee@gmail.com</a> en dónde con gusto la recibiremos, analizaremos, y en caso de que sea funcional, la añadiremos a nuestro sitio, dando crédito a ti como colaborador</p>
+<p>Juntos podemos hacer que esto sea más grande.</p>
+<p>Zumbee es la solución. Escúchalas. Encuentra el mejor hogar para ellas.</p>
+<p>Zumbee</p>
+</div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -344,7 +454,38 @@ $(document).ready(function () {
 </script>
 
 <!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3,h4,h5",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
